@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacked by MR ROBOT (SPACE)</title>
+    <style>
+        /* Basic style for the background and text */
+        body {
+            background-color: black;
+            color: red;
+            font-family: monospace;
+            text-align: center;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        /* Heading and paragraph styling */
+        h1 {
+            font-size: 3em;
+            animation: glitch 1s infinite;
+            margin: 0;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-top: 20px;
+            animation: glow 2s infinite alternate;
+        }
+
+        /* Glitch effect using keyframes */
+        @keyframes glitch {
+            0% {
+                transform: translate(0);
+                text-shadow: 2px 2px red, -2px -2px blue;
+            }
+            20% {
+                transform: translate(-2px, -2px);
+                text-shadow: 2px 2px blue, -2px -2px red;
+            }
+            40% {
+                transform: translate(2px, 2px);
+                text-shadow: -2px -2px red, 2px 2px blue;
+            }
+            60% {
+                transform: translate(-2px, 2px);
+                text-shadow: 2px -2px blue, -2px 2px red;
+            }
+            80% {
+                transform: translate(2px, -2px);
+                text-shadow: -2px 2px red, 2px -2px blue;
+            }
+            100% {
+                transform: translate(0);
+                text-shadow: 2px 2px blue, -2px -2px red;
+            }
+        }
+
+        /* Glowing effect on text */
+        @keyframes glow {
+            from {
+                color: red;
+                text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red, 0 0 40px red;
+            }
+            to {
+                color: #ff2222;
+                text-shadow: 0 0 20px #ff2222, 0 0 30px #ff2222, 0 0 40px #ff2222, 0 0 50px #ff2222;
+            }
+        }
+
+        /* Moving animation */
+        .move {
+            position: relative;
+            display: inline-block;
+            animation: float 3s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+    <script>
+        // Pop-up alert to prank the viewer
+        window.onload = function() {
+            setTimeout(() => alert("Your site has been hacked by MR ROBOT (SPACE)!"), 1000);
+        };
+    </script>
+</head>
+<body>
+    <!-- Main content with glitchy text effects -->
+    <h1 class="move">Hacked by <span class="glitch">MR ROBOT (SPACE)</span></h1>
+    <p>Your security measures are too weak...<br>Consider strengthening them!</p>
+</body>
+</html>
